@@ -1,3 +1,0 @@
-Hi, i am Nikunj Rathi.
-I have developed an app using React-Native.
-The app is on Google Play Store with the following name : "FOKUS".
