@@ -30,7 +30,7 @@ for i in range(2, int(a)):
 if flag == 0:
     print("The number you have entered is a prime number.")
 
-# Checking wheter number is prime or not if user enters 1 or 2
+# Checking whetber number is prime or not if user enters 1 or 2
 if a == 2:
     print("The number you have entered is a prime number.")
 elif a == 1:
