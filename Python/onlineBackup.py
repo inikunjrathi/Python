@@ -13,7 +13,7 @@ class uploadFiles:
 
 
 def main():
-    access_token = "sl.Ayu7glyXm8W1l0SE4wwwoYV1OQ7bP0Momv0H8z5zqpv0LIcg6oeWivJIerAzpSUZGjWcQEs9pRWIvjCmCksiZD8ieuZCKzUlSXH2cbzpamqO8w9C7SX-9v3ro_flNfMpHm_x1DtX1LTJ"
+    access_token = "******"
     uploadF = uploadFiles(access_token)
 
     file_from = input(
