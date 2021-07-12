@@ -69,7 +69,7 @@ tstart, tend = (
 dataofintervention1 = pd.read_csv("Data/data1.csv")
 listofintervention1 = dataofintervention1["Math_score"].tolist()
 meanoffirstintervention = statistics.mean(listofintervention1)
-fig2 = ff.create_distplot(
+"""fig2 = ff.create_distplot(
     [samplingDistribution], ["Sampled Distribution"], show_hist=False
 )
 fig2.add_trace(
@@ -87,12 +87,12 @@ fig2.add_trace(
         mode="lines",
         name="MEAN OF FIRST INTERVENTION",
     )
-)
+)"""
 
 
 # second intervention
-dataofintervention2 = pd.read_csv("Data/data.csv")
-listofintervention2 = dataofintervention1["Math_score"].tolist()
+dataofintervention2 = pd.read_csv("Data\data2.csv")
+listofintervention2 = dataofintervention2["Math_score"].tolist()
 meanofsecondintervention = statistics.mean(listofintervention2)
 fig3 = ff.create_distplot(
     [samplingDistribution], ["Sampled Distribution"], show_hist=False
@@ -122,3 +122,9 @@ fig3.add_trace(
     )
 )
 fig3.show()
+print(meanoffirstintervention, meanofsecondintervention);
+
+zscore1 = (meanoffirstintervention-meanOfSamplingDistribution)/stdOfSamplingDistribution
+zscore2 = (meanofsecondintervention-meanOfSamplingDistribution)/stdOfSamplingDistribution
+
+print("z-scores are:", zscore1, zscore2)
